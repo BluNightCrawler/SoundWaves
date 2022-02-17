@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <style>
+        *{
+    margin: 2px;
+    
+}
+html{
+    background-color: black;
+}
+table{
+    border: 1px dotted green;
+}
+div p{
+    margin-left: 35px;
+    color: aqua;
+    font-size: 75px;
+    text-align: right;
+    background-color: grey;
+    display: inline-block;
+}
+p{
+    color:violet;
+}
+h1{
+    background-color: aliceblue;
+    display: inline-block;
+}
+.circle-filled{
+    
+    width:250px;
+    height: 250px;
+    border: 4px solid orange;
+    background-color:grey;
+    border-radius:50%;
+    transform: rotateY(75deg);
+    z-index: -1;
+    
+}
+.circle{
+    
+    width:250px;
+    height: 250px;
+    border: 4px solid orange;    
+    border-radius:50%;
+    transform: rotateY(75deg);
+    background: transparent;
+}
+.grid{
+    grid-template-columns: 10% auto 10%;
+    display: grid;
+}
+.divide{
+    height: 5rem;
+}
+
+th{
+    color: red;
+}
+#far-Left{    
+    position: relative;
+    animation-name:Far-Left ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: transparent;
+    
+}
+#Mid-Left{
+    position: relative;
+    animation-name:Mid-Left ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: transparent;
+    
+}
+#Left{
+    
+    position: relative;
+    animation-name:Lefts ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Far-Left{
+    0%{right:0px;}
+   100%{right:200px;}
+    
+}
+@keyframes Mid-Left{
+    0%{right:0px;}
+    100%{right: 150px;}
+    
+}
+@keyframes Lefts{
+    0%{right:0px;}
+    100%{right: 75px;}
+    
+}
+#far-Right{    
+    position: relative;
+    animation-name:Far-Right ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: transparent;
+    
+    
+}
+#Mid-Right{
+    position: relative;
+    animation-name:Mid-Right ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background: transparent;
+    
+}
+#Right{
+    
+    position: relative;
+    animation-name:Rights ;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Far-Right{
+    0%{right:0px;}
+    100%{right:-200px;}
+    
+}
+@keyframes Mid-Right{
+    0%{right:0px;}
+    100%{right: -150px;}
+    
+}
+@keyframes Rights{
+    0%{right:0px;}
+    100%{right:-75px;}
+    
+}
+article{
+    background-color: white;
+    grid-column-start: 2;
+    border: 3px solid black;
+    height: 300px;
+    margin: 10px 3px;
+    padding: 15px;
+    border-radius: 3px;
+    color: black;
+    box-shadow: -5px 5px 5px blue;
+}
+article h3{
+    color: gray;
+    font-size: 3rem;
+}
+article p{
+    border: 3px dotted black;
+    font-size: 25px;
+}
+#Static{
+    transform: translate(110px, 0px);
+    
+    
+}
+#Static1{
+    
+    position: relative;
+    animation-name:Statics1 ;
+    transform: translate(90px,0px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Statics1{
+    0%{right:0px;}
+    100%{right:50px;}
+    
+}
+#Static2{
+    
+    position: relative;
+    animation-name:Statics2 ;
+    transform: translate(65px,0px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Statics2{
+    0%{right:0px;}
+    100%{right:75px;}
+    
+}
+#Static3{
+    
+    position: relative;
+    animation-name:Statics3 ;
+    transform: translate(45px,0px);
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+@keyframes Statics3{
+    0%{right:0px;}
+    100%{right:100px;}
+    
+}
+    </style>
+
+
+
+    
+    <body class="grid">
+        <style type="text/css">
+            .tg  {border-collapse:collapse;border-spacing:0;}
+            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+            .tg .tg-8udk{color:#68cbd0;font-size:22px;text-align:right;vertical-align:top}
+            .tg .tg-lqy6{text-align:right;vertical-align:top}
+            .tg .tg-0lax{text-align:left;vertical-align:top}
+            </style>
+            <body ><h1 style="grid-column-start: 2; text-align: center;">Science Project</h1></body>
+            
+            <table class="tg" >dsd
+            <thead>
+              <tr>
+                <td class="tg-lqy6" rowspan="5"><div class="circle"></div>></td>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk">*</td>
+                <td class="tg-8udk" id="Right">*</td>
+                <td class="tg-8udk" id="Mid-Right">*</td>
+                <td class="tg-8udk"id="far-Right">*</td>
+                <td class="tg-0lax" rowspan="5"><div class="circle"></div></td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk">*</td>
+                <td class="tg-8udk" id="Right">*</td>
+                <td class="tg-8udk" id="Mid-Right">*</td>
+                <td class="tg-8udk"id="far-Right">*</td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk">*</td>
+                <td class="tg-8udk" id="Right">*</td>
+                <td class="tg-8udk" id="Mid-Right">*</td>
+                <td class="tg-8udk"id="far-Right">*</td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk">*</td>
+                <td class="tg-8udk" id="Right">*</td>
+                <td class="tg-8udk" id="Mid-Right">*</td>
+                <td class="tg-8udk"id="far-Right">*</td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk">*</td>
+                <td class="tg-8udk" id="Right">*</td>
+                <td class="tg-8udk" id="Mid-Right">*</td>
+                <td class="tg-8udk"id="far-Right">*</td>
+              </tr>
+            </thead>
+            </table>            
+    </body>
+    <br> <br>
+    <body  >
+        <div id="full-article" style="grid-column-start: 2;">
+            <article>
+        <h3>Both Sides are Open</h3>
+        <p>
+            Get Out
+        </p>
+        </article>
+        </div>
+    </body>
+    
+    
+        <table class="tg" style="grid-column-start: 2;" >
+            <thead>
+              <tr>
+                <td class="tg-lqy6" rowspan="5"><div class="circle"></div>></td>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk" id="Static3" >*</td>
+                <td class="tg-8udk" id="Static2" >*</td>
+                <td class="tg-8udk" id="Static1">*</td>
+                <td class="tg-8udk" id="Static">*</td>
+                <td class="tg-0lax" rowspan="5"><div class="circle-filled"></div></td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk" id="Static3" >*</td>
+                <td class="tg-8udk" id="Static2" >*</td>
+                <td class="tg-8udk" id="Static1" id="Left">*</td>
+                <td class="tg-8udk"id="Static">*</td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk"id="Static3" >*</td>
+                <td class="tg-8udk" id="Static2" >*</td>
+                <td class="tg-8udk" id="Static1" >*</td>
+                <td class="tg-8udk"id="Static">*</td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk" id="Static3" >*</td>
+                <td class="tg-8udk"id="Static2"  >*</td>
+                <td class="tg-8udk" id="Static1" id="Left">*</td>
+                <td class="tg-8udk"id="Static">*</td>
+              </tr>
+              <tr>
+                <td class="tg-8udk" id="far-Left">*</td>
+                <td class="tg-8udk" id="Mid-Left">*</td>
+                <td class="tg-8udk" id="Left">*</td>
+                <td class="tg-8udk"id="Static3" >*</td>
+                <td class="tg-8udk"id="Static2" >*</td>
+                <td class="tg-8udk" id="Static1" id="Left">*</td>
+                <td class="tg-8udk"id="Static">*</td>
+              </tr>
+            </thead>
+            </table>    
+            <body  >
+                <div id="full-article" style="grid-column-start: 2;">
+                    <article>
+                <h3>Close End</h3>
+                <p>
+                    Get Out
+                </p>
+                </article>
+                </div>
+            </body>
+    
+</html>
